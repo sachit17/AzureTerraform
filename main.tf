@@ -6,6 +6,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "demo_rg" {
-  name     = "MyResourceGroup"
-  location = "westeurope"
+  name     = "${resource_group_name}"
+  location = "${location}"
 }
+
