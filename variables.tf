@@ -21,8 +21,10 @@ variable "tenant_id" {
 
 variable "resource_group_name" {
   description = "Resource Group"
+  default     = "MyResourceGroup"
 }
 
 variable "location" {
   description = ""
+  default     = "westeurope"
 }
